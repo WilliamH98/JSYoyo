@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register JS Yo-Yo</title>
+	<link rel="stylesheet" type="text/css" href="Registration-Style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<input type="checkbox" id="transView">
+	<input type="checkbox" id="button">
+	<label id="buttonClick" for="button">&#9776;</label>
+	
+	<div class="nav grid-12" id="navHeader">
+		<a href="Home.html"><img id="logo" class="grid-1" src="Images/Logo/logo yoyo.png"></a>
+
+		<ul id="menu" class="grid-11 menuList">
+			<li><a href="Home.html">Home</a></li>	
+			<li class="menu2"><a href="#">Yo-yo Types</a>
+				<ul class="dropdown">
+					<li>
+						<a href="Basic.html">Basic</a>
+					</li>
+				
+					<li>
+						<a href="Professional.html">Professional</a>
+					</li>
+				</ul>
+			</li>	
+			<li><a href="Tutorial.html">Tutorials</a></li>
+			<li><a href="Contact.html">Contact</a></li>
+			<li><a href="Registration.html">Registration</a></li>
+		</ul>
+	</div>
+
+	<div class="grid-12 content">
+		<div class="grid-12 center">
+			<div class="Registration">
+				<form onsubmit="register(event)">
+					<h1>REGISTRATION : </h1>	
+					
+					<br/>
+					<br/>
+					<strong><label>Name : </label></strong>
+					<input name="name" type="text" placeholder="Enter Name" autofocus="autofocus">
+					<p id = "name-error"></p>
+
+					<br/>
+					<br/>
+					<strong><label>Email : </label></strong>
+					<input name="email" type="text" placeholder="JS@JS.com"/>
+					<p id="email-error"></p>
+
+					<br/>
+					<br/>
+					<strong><label>Password : </label></strong>
+					<input name="pass" type="password" placeholder="Enter Password"/>
+					<p id="password-error"></p>
+
+					<br/>
+					<br/>
+					<strong><label>Confirm Password : </label></strong>
+					<input name="repass" type="password" placeholder="Enter Password"/>
+					<p id="repass-error"></p>
+					<!-- 
+						<span id='message'></span> -->
+					
+					<br/>
+					<br/>
+					<strong><label>Address : </label></strong>
+					<input name="address" type="address" placeholder="Enter Address"/>
+					<p id="address-error"></p>					
+
+					<br/>
+					<br/>
+					<strong><label>Gender :</label></strong>
+					<div class="MF">
+						<input class="rb1" type="radio" name="gender" value="male">Male
+						<input class="rb2" type="radio" name="gender" value="female">Female
+						<p id="gender-error"></p>
+					</div>
+
+					<br/>
+					<br/>
+					<strong><label>City :</label></strong>
+					<select name="City">
+						<option>--City--</option>
+						<option>Jakarta</option>
+						<option>Bandung</option>
+						<option>Tangerang</option>
+					</select>
+					<p id="city-error"></p>
+					
+					<br/>
+					<br/>
+					<strong><label>User Picture : </label></strong>
+					<br>
+					<br/>
+					<input id="inputImg" type="file" accept="image/*"/>
+					
+					<br/>
+					<br/>
+
+					<!-- <input type="submit" value="Register" id = "regist"> -->
+					<button class="btn btn-primary" type="submit" value="Register">Register</button>
+				</form>
+			</div>
+		</div>
+	</div>
+		
+	<div class="grid-12 footer">
+		<div class="grid-4 footerLeft">
+			<div class="logo">
+				<img src="Images/Logo/logo yoyo.png">
+			</div>
+
+			<div class="footContact">
+				<a class="grid-2" href="#"><img src="Images/Contact/facebook.png" width="40" height="40" onmouseover="document.getElementById('facebook').style.display = 'block';" onmouseout="document.getElementById('facebook').style.display = 'none';"></a></li>
+				<a class="grid-2" href="#"><img src="Images/Contact/twitter.png" width="40" height="40" onmouseover="document.getElementById('twitter').style.display = 'block';" onmouseout="document.getElementById('twitter').style.display = 'none';"></a></li>
+				<a class="grid-2" href="#"><img src="Images/Contact/tumblr.png" width="40" height="40" onmouseover="document.getElementById('tumblr').style.display = 'block';" onmouseout="document.getElementById('tumblr').style.display = 'none';"></a></li>
+				<label class="grid-3" id="facebook">Facebook</label>
+				<label class="grid-3" id="twitter">Twitter</label>
+				<label class="grid-3" id="tumblr">Tumblr</label>
+			</div>
+		</div>
+		<div class="grid-4 footerCenter">
+			<h2>Address</h2>
+			<br>
+			<p>
+				ABC Tower, 1st Floor No. 1 
+			</p>
+		</div>
+		<div class="grid-4 footerRight">
+			<h2>Contact</h2>
+			<br>
+			<p>
+				Phone : (021)134567890
+				<br>
+				Email : JSyoyo@asd.com 
+			</p>
+		</div>
+	</div>
+	<script type="text/javascript" src="registration.js"></script>
+	
+	<!-- <audio autoplay="true" loop="true" src="Musics/Blazing Teens Op Chinese Version.mp3"> -->
+</body>
+</html>

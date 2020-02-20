@@ -1,0 +1,405 @@
+@media only screen and (max-width:500px) {
+.nav{
+		display: none;
+	}
+
+	.nav img{
+		display: none;
+	}
+
+	[class*="grid-"] {
+        width: 100%;  
+        transition-duration: 0.7s;
+    }
+
+    #button:checked ~ div.nav{
+    	display: block;
+    	animation: 1s transitionTop ease;
+    }
+
+    #button:checked ~ div.nav ul li{
+    	display: block;
+    	padding: 6%;
+    }
+
+	@keyframes transitionTop{
+		from{
+			top:-280px;
+			position: fixed;
+		}
+
+		to{
+			top: 0;
+			position: fixed;
+		}
+	}
+
+	*{
+		font-size: 10px;
+	}
+}
+
+/*General Style*/
+
+*{
+	font-family: kristen itc;
+	box-sizing: border-box;
+}
+
+.grid-1 {width: 8.33%;}
+.grid-2 {width: 16.66%;}
+.grid-3 {width: 25%;}
+.grid-4 {width: 33.33%;}
+.grid-5 {width: 41.66%;}
+.grid-6 {width: 50%;}
+.grid-7 {width: 58.33%;}
+.grid-8 {width: 66.66%;}
+.grid-9 {width: 75%;}
+.grid-10 {width: 83.33%;}
+.grid-11 {width: 91.66%;}
+.grid-12 {width: 100%;}
+
+[class*="grid-"] {
+	float: left;
+}
+
+body {
+	animation: 1s transition ease;
+	animation-fill-mode: forwards;
+}
+
+/*nav Start*/
+#button{
+	display: none;
+	z-index: 2;
+}
+
+#buttonClick{
+	cursor: pointer;
+	color: #ff6f00;
+	position: fixed;
+	top: 0;
+	background: #fffde7;
+	width: 100%;
+	z-index: 1;
+}
+
+#transView{
+	display: none;
+}
+
+.nav{
+	z-index: 1;
+	list-style: none;
+	width: 100%;
+	/*height: 20%;*/
+	font-size: 18px;
+	border-bottom: 3px solid #ff6f00;
+	background: #fffde7;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/*.sticky + .content {
+  padding-top: 102px;
+}*/
+
+.nav li{
+	top: 0;
+	position: fixed;
+	position: relative;
+	display: inline-block; 
+}
+
+.nav li a{
+	padding: 15px;
+	color: #ff6f00;
+	margin-bottom: 3px;
+	/*border-bottom: 3px solid rgba(0, 0, 0, 0); */
+}
+
+.menuList{
+	/*border: 1px solid black;*/
+	margin-top: 5%;
+}
+
+.nav li a:hover{
+	transition-duration: 0.3s;
+	background-color:rgba(0, 0, 0, 0.7); 
+	border-bottom: 5px solid #ff6f00;
+	border-radius: 30px 30px 30px 30px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin-top: 20px;
+    z-index: 1;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+}
+
+.dropdown li a{
+	display: block;
+	min-width: 150px;
+}
+
+.menu2:hover .dropdown {
+    display: block;
+}
+
+/*nav End*/
+
+.content{
+	margin-top: 3%;	
+/*	display: grid;*/
+	/*grid-template-columns: 15% 70% 15%;*/
+}
+
+.center{
+	/*grid-column: 2;*/
+	/*grid-row: 1;*/
+}
+
+.center .Registration{
+	height: 100%;
+	width: 50%;
+	background: white;
+	padding: 3%;
+	/*font-size: 18px;*/
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border : 2px solid #ff6f00;
+	border-radius: 15px 15px 15px 15px;
+}
+
+.center .Registration h1{
+	text-align: center;
+}
+
+.center .Registration button{
+	cursor: pointer;
+	text-align: center;
+	background-color: #ff6f00;
+	color: #fffde7;
+    padding-left: 3%;
+    margin: 8px;
+    border: 2px solid blue;
+	border-radius: 20px 20px 20px 20px;
+    width: 95%;
+    height: 40px;
+    /*font-size: 18px;*/
+}
+
+.center .Registration button:hover{
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+	transform: scale(1.1);
+	transition-duration: 0.5s;
+	background: rgba(0,0,0,0.7);
+}
+
+.center .Registration input{
+	display: block;
+	width: 95%;
+	height: 100%;
+	border-radius: 10px 10px 10px 10px;
+	padding-left: 3%;
+}
+
+.center .Registration .MF input{
+	display: inline-table;
+	width: 4%;
+	height: 100%;
+	margin-left: 20%;
+}
+
+.center .Registration select{
+	margin-left: 12%;
+	width: 50%;
+	height: 100%;
+	border-radius: 10px 10px 10px 10px;
+}
+
+#name-error, #email-error, #password-error, #repass-error, #address-error, #gender-error, #city-error, #message-error{
+	color : red;
+	font-size: 12px;
+}
+
+.footer{
+	/*border: 1px solid black;*/
+	margin-top: 30px;
+	bottom: 0;
+	position: relative;
+	background: #ff6f00;
+	width: 100%;
+	height: 100%;
+}
+
+.footer .footerLeft label{
+	margin-top:4%;
+	margin-left: 2%;
+	width: 100px;
+	text-align: center;
+	display: none;
+	background: rgba(0,0,0,0.5);
+	padding: 2%;
+	border-radius: 20px 20px 20px 20px;
+	color: #fffde7;
+}
+
+.footer .footerLeft .logo img{
+	height: 35%;
+	width: 35%;
+}
+
+.footer .footerLeft .footContact img{
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	padding:15%;
+	/*margin-bottom: 10px;*/
+	/*margin-left: 25px; */
+}
+
+.footer .footerLeft .footContact img:hover{
+	transform: scale(1.7);
+   	-moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.footerCenter, .footerRight{
+	color: #fffde7;
+}
+
+a{
+	text-decoration: none;
+}
+
+audio{
+	display: none;
+}
+
+@keyframes transition{
+	from{
+		opacity: 0;
+	}
+
+	to{
+		opacity: 1;	
+	}
+}
+
+/*Contact Style*/
+.center .contact{	
+	display: none;
+	position: fixed;
+	margin-left: 25%;
+	margin-right: 25%;
+	z-index: 1;
+	top: 0;
+	height: 98%;
+	width: 50%;
+	background: white;
+	padding: 3%;
+	/*font-size: 18px;*/
+	/*display: block;*/
+	border : 2px solid #ff6f00;
+	border-radius: 15px 15px 15px 15px;
+}
+
+.contact input{
+	width: 85%;
+	height: 100%;
+	border-radius: 10px 10px 10px 10px;
+	padding-left: 3%;
+}
+
+.center .companyHis{
+	border:2px solid #ff6f00;
+	border-radius: 10px 10px 10px 10px;
+	height: 100%;
+	width: 75%;
+	padding: 2%;
+	background: white;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 2%;
+}
+
+.contact h1, .companyHis h1{
+	text-align:center;
+}
+
+.companyHis img{
+	width: 50%;
+	padding: 1%;
+}
+
+.contact .closeButton{
+	cursor: pointer;
+	border: 2px solid blue;
+	border-radius: 20px 20px 20px 20px;
+	background-color: #ff6f00;
+	color: #fffde7;
+	font-size: 18px;
+}
+
+.companyHis .sendButton{
+	cursor: pointer;
+	text-align: center;
+	background-color: #ff6f00;
+	color: #fffde7;
+    padding-left: 3%;
+    border: 2px solid blue;
+	border-radius: 20px 20px 20px 20px;
+	margin-top: 5%;
+	margin-left: 18%;
+	margin-right: 18%;
+    width: 65%;
+    height: 40px;
+    /*font-size: 18px;*/
+}
+
+.contact .sendMessage{
+	cursor: pointer;
+	text-align: center;
+	background-color: #ff6f00;
+	color: #fffde7;
+    padding-left: 3%;
+    margin: 8px;
+    border: 2px solid blue;
+	border-radius: 20px 20px 20px 20px;
+    width: 95%;
+    height: 40px;
+    /*font-size: 18px;*/
+}
+
+.contact button:hover, .companyHis .sendButton:hover{
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+	transform: scale(1.1);
+	transition-duration: 0.5s;
+	background: rgba(0,0,0,0.7);
+}
+
+.animate {
+    -webkit-animation: animateZoom 0.5s;
+    animation: animateZoom 0.5s
+}
+
+/*@-webkit-keyframes animateZoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}*/
+    
+@keyframes animateZoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Break Away</title>
+	<link rel="stylesheet" type="text/css" href="OtherStyle.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<input type="checkbox" id="transView">
+	<input type="checkbox" id="button">
+	<label id="buttonClick" for="button">&#9776;</label>
+	
+	<div class="nav grid-12" id="navHeader">
+		<a href="Home.html"><img id="logo" class="grid-1" src="Images/Logo/logo yoyo.png"></a>
+
+		<ul id="menu" class="grid-11 menuList">
+			<li><a href="Home.html">Home</a></li>	
+			<li class="menu2"><a href="#">Yo-yo Types</a>
+				<ul class="dropdown">
+					<li>
+						<a href="Basic.html">Basic</a>
+					</li>
+				
+					<li>
+						<a href="Professional.html">Professional</a>
+					</li>
+				</ul>
+			</li>	
+			<li><a href="Tutorial.html">Tutorials</a></li>
+			<li><a href="Contact.html">Contact</a></li>
+			<li><a href="Registration.html">Registration</a></li>
+		</ul>
+	</div>
+
+	<div class="grid-6 webContent">	
+		<a href="#" class="prev" onclick="plusDivs(-1)"><</a>
+		<label id="currentSlide"></label>
+		<a href="#" class="next" onclick="plusDivs(1)">></a>
+		
+		<img class="myImages" src="Images/Tutorials/Basic/Break Away/TIBreakaway1.jpg">
+		<img class="myImages" src="Images/Tutorials/Basic/Break Away/TIBreakaway2.jpg">
+		<img class="myImages" src="Images/Tutorials/Basic/Break Away/TIBreakaway3.jpg">
+		<img class="myImages" src="Images/Tutorials/Basic/Break Away/TIBreakaway4.jpg">
+		<img class="myImages" src="Images/Tutorials/Basic/Break Away/TIBreakaway5.jpg">
+		<img class="myImages" src="Images/Tutorials/Basic/Break Away/TIBreakaway6.jpg">
+		<img class="myImages" src="Images/Tutorials/Basic/Break Away/TIBreakaway7.jpg">
+	</div>
+
+	<div class="grid-6 webContent2">
+		<p id="desc1">
+			1. Hold the yo-yo above your shoulder
+		</p>
+
+		<p id="desc2">
+			2. Throw it away from you, releasing the yo-yo quite early.
+		</p>
+
+		<p id="desc3">
+			3. ...and swinging...
+		</p>
+		
+		<p id="desc4">
+			4. ...It...
+		</p>
+		
+		<p id="desc5">
+			5. ...downwards...
+		</p>
+		
+		<p id="desc6">
+			6. This is the point, where the string no longer is held by being wedged against the response system. The picture shows this nicely: the string is no longer taut at the end. From here on the yo-yo is falling freely, sharply hitting the end of the string. This can be quite painful, and thus it is recommended, that you stop pulling on the string shortly before this point is reached.
+		</p>
+		
+		<p id="desc7">
+			7. Let the yo-yo continue upwards into the kind of trick you are trying to do.
+		</p>
+	</div>
+	<p class="grid-6"></p>
+	
+	<a href="ForwardPass.html" class="grid-3" id="prevTutorialBtn"><button>Previous Tutorial</button></a>
+	<a href="HopTheFence.html" class="grid-3" id="nextTutorialBtn"><button>Next Tutorial</button></a>
+
+	<div class="grid-12 footer">
+		<div class="grid-4 footerLeft">
+			<div class="logo">
+				<img src="Images/Logo/logo yoyo.png">
+			</div>
+
+			<div class="footContact">
+				<a class="grid-2" href="#"><img src="Images/Contact/facebook.png" width="40" height="40" onmouseover="document.getElementById('facebook').style.display = 'block';" onmouseout="document.getElementById('facebook').style.display = 'none';"></a></li>
+				<a class="grid-2" href="#"><img src="Images/Contact/twitter.png" width="40" height="40" onmouseover="document.getElementById('twitter').style.display = 'block';" onmouseout="document.getElementById('twitter').style.display = 'none';"></a></li>
+				<a class="grid-2" href="#"><img src="Images/Contact/tumblr.png" width="40" height="40" onmouseover="document.getElementById('tumblr').style.display = 'block';" onmouseout="document.getElementById('tumblr').style.display = 'none';"></a></li>
+				<label class="grid-3" id="facebook">Facebook</label>
+				<label class="grid-3" id="twitter">Twitter</label>
+				<label class="grid-3" id="tumblr">Tumblr</label>
+			</div>
+		</div>
+		<div class="grid-4 footerCenter">
+			<h2>Address</h2>
+			<br>
+			<p>
+				ABC Tower, 1st Floor No. 1 
+			</p>
+		</div>
+		<div class="grid-4 footerRight">
+			<h2>Contact</h2>
+			<br>
+			<p>
+				Phone : (021)134567890
+				<br>
+				Email : JSyoyo@asd.com 
+			</p>
+		</div>
+	</div>
+	<script type="text/javascript" src="Tutorial.js"></script>
+	<script src="script/jquery-latest.min.js"></script>
+	<script src="script/script.js"></script>
+	<!-- <audio autoplay="true" loop="true" src="Musics/Blazing Teens Op Chinese Version.mp3"> -->
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forward Pass</title>
+	<link rel="stylesheet" type="text/css" href="OtherStyle.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<input type="checkbox" id="transView">
+	<input type="checkbox" id="button">
+	<label id="buttonClick" for="button">&#9776;</label>
+	
+	<div class="nav grid-12" id="navHeader">
+		<a href="Home.html"><img id="logo" class="grid-1" src="Images/Logo/logo yoyo.png"></a>
+
+		<ul id="menu" class="grid-11 menuList">
+			<li><a href="Home.html">Home</a></li>	
+			<li class="menu2"><a href="#">Yo-yo Types</a>
+				<ul class="dropdown">
+					<li>
+						<a href="Basic.html">Basic</a>
+					</li>
+				
+					<li>
+						<a href="Professional.html">Professional</a>
+					</li>
+				</ul>
+			</li>	
+			<li><a href="Tutorial.html">Tutorials</a></li>
+			<li><a href="Contact.html">Contact</a></li>
+			<li><a href="Registration.html">Registration</a></li>
+		</ul>
+	</div>
+	
+	<div class="grid-6 webContent">	
+		<a href="#" class="prev" onclick="plusDivs(-1)"><</a>
+		<label id="currentSlide"></label>
+		<a href="#" class="next" onclick="plusDivs(1)">></a>
+		<img class="myImages" src="Images/Tutorials/Basic/Forward Pass/TIFwPass1.jpg">
+		<img class="myImages" src="Images/Tutorials/Basic/Forward Pass/TIFwPass2.jpg">
+		<img class="myImages" src="Images/Tutorials/Basic/Forward Pass/TIFwPass3.jpg">
+		<img class="myImages" src="Images/Tutorials/Basic/Forward Pass/TIFwPass4.jpg">
+		<img class="myImages" src="Images/Tutorials/Basic/Forward Pass/TIFwPass5.jpg">
+		<img class="myImages" src="Images/Tutorials/Basic/Forward Pass/TIFwPass6.jpg">
+		<img class="myImages" src="Images/Tutorials/Basic/Forward Pass/TIFwPass7.jpg">
+		<img class="myImages" src="Images/Tutorials/Basic/Forward Pass/TIFwPass8.jpg">
+		<img class="myImages" src="Images/Tutorials/Basic/Forward Pass/TIFwPass9.jpg">
+		<img class="myImages" src="Images/Tutorials/Basic/Forward Pass/TIFwPass10.jpg">
+	</div>
+
+	<div class="grid-6 webContent2">
+		<p id="desc1">
+			1. Bring back your throw hand, holding the yo-yo facing backwards.
+		</p>
+
+		<p id="desc2">
+			2. Swing your throw arm forward while releasing the yo-yo.
+		</p>
+
+		<p id="desc3">
+			3. Let it swing...
+		</p>
+		
+		<p id="desc4">
+			4. ...forward...
+		</p>
+		
+		<p id="desc5">
+			5. ...upwards...
+		</p>
+		
+		<p id="desc6">
+			6. ...until it is level with your hand.
+		</p>
+		
+		<p id="desc7">
+			7. Now give it a tug and let it come back...
+		</p>
+		
+		<p id="desc8">
+			8. ...while turning your palm upwards.
+		</p>
+		
+		<p id="desc9">
+			9. Catch it...
+		</p>
+		
+		<p id="desc10">
+			10.  ...and you have the yo-yo in your hand ready for the next throw. The palm has to be facing upwards, not only to make the catch easier, but also to have the yo-yo oriented correctly. If you catch it the other way round, you would have to turn it before throwing again.
+		</p>
+	</div>
+	<p class="grid-6"></p>
+	<a href="ThrowDown.html" class="grid-3" id="prevTutorialBtn"><button>Previous Tutorial</button></a>
+	<a href="BreakAway.html" class="grid-3" id="nextTutorialBtn"><button>Next Tutorial</button></a>
+
+	<div class="grid-12 footer">
+		<div class="grid-4 footerLeft">
+			<div class="logo">
+				<img src="Images/Logo/logo yoyo.png">
+			</div>
+
+			<div class="footContact">
+				<a class="grid-2" href="#"><img src="Images/Contact/facebook.png" width="40" height="40" onmouseover="document.getElementById('facebook').style.display = 'block';" onmouseout="document.getElementById('facebook').style.display = 'none';"></a></li>
+				<a class="grid-2" href="#"><img src="Images/Contact/twitter.png" width="40" height="40" onmouseover="document.getElementById('twitter').style.display = 'block';" onmouseout="document.getElementById('twitter').style.display = 'none';"></a></li>
+				<a class="grid-2" href="#"><img src="Images/Contact/tumblr.png" width="40" height="40" onmouseover="document.getElementById('tumblr').style.display = 'block';" onmouseout="document.getElementById('tumblr').style.display = 'none';"></a></li>
+				<label class="grid-3" id="facebook">Facebook</label>
+				<label class="grid-3" id="twitter">Twitter</label>
+				<label class="grid-3" id="tumblr">Tumblr</label>
+			</div>
+		</div>
+		<div class="grid-4 footerCenter">
+			<h2>Address</h2>
+			<br>
+			<p>
+				ABC Tower, 1st Floor No. 1 
+			</p>
+		</div>
+		<div class="grid-4 footerRight">
+			<h2>Contact</h2>
+			<br>
+			<p>
+				Phone : (021)134567890
+				<br>
+				Email : JSyoyo@asd.com 
+			</p>
+		</div>
+	</div>
+	<script type="text/javascript" src="Tutorial.js"></script>
+	<script src="script/jquery-latest.min.js"></script>
+	<script src="script/script.js"></script>
+	<!-- <audio autoplay="true" loop="true" src="Musics/Blazing Teens Op Chinese Version.mp3"> -->
+</body>
+</html>

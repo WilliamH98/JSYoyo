@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Basic Yo-Yo</title>
+	<link rel="stylesheet" type="text/css" href="OtherStyle.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<input type="checkbox" id="transView">
+	<input type="checkbox" id="button">
+	<label id="buttonClick" for="button">&#9776;</label>
+	
+	<div class="nav grid-12" id="navHeader">
+		<a href="Home.html"><img id="logo" class="grid-1" src="Images/Logo/logo yoyo.png"></a>
+
+		<ul id="menu" class="grid-11 menuList">
+			<li><a href="Home.html">Home</a></li>	
+			<li  class="menu2"><a href="#">Yo-yo Types</a>
+				<ul class="dropdown">
+					<li>
+						<a href="Basic.html">Basic</a>
+					</li>
+				
+					<li>
+						<a href="Professional.html">Professional</a>
+					</li>
+				</ul>
+			</li>	
+			<li><a href="Tutorial.html">Tutorials</a></li>
+			<li><a href="Contact.html">Contact</a></li>
+			<li><a href="Registration.html">Registration</a></li>
+		</ul>
+	</div>
+
+	<div class="grid-12 webContent">
+		<div class="center">
+			<div class="grid-3 centerLeft">
+				<h3>NEW ARRIVAL PRODUCTS :</h3>
+				<ul>
+					<li><a href="Echostrike FX.html">ECHOSTRIKE FX</a></li>
+					<li><a href="Luminex Jaune.html">LUMINEX JAUNE</a></li>
+					<li><a href="Morph Master Tiger.html">MORPH MASTER TIGER</a></li>
+					<li><a href="Flame Wind.html">FLAME WIND</a></li>
+					<li><a href="Battle Spin Yoyo Wave.html">BATTLE SPIN YOYO WAVE</a></li>
+					<li><a href="Morph Master Dark Dragon.html">MORPH MASTER DARK DRAGON</a></li>
+					<li><a href="Chiyan War.html">CHIYAN WAR TIGER v ICE FLAME METAL</a></li>
+					<li><a href="Nuclear Fussion.html">NUCLEAR FUSSION</a></li>
+				</ul>
+			</div>
+
+			<div class="grid-8 centerRight">
+				<input type="checkbox" id="changeView" checked="">
+			  	<label class="view" for="changeView">
+			  		Change View
+			  	</label>
+
+				<div class="gridView">
+					<div class="gridTop1">
+						<a href="Echostrike FX.html"><img src="Images/Yoyo/Basic/1.1.jpg"></a>
+						<a href="Luminex Jaune.html"><img src="Images/Yoyo/Basic/2.1.jpg"></a>
+						<a href="Morph Master Tiger.html"><img src="Images/Yoyo/Basic/3.jpeg"></a>
+					</div>
+
+					<div class="bottom1">
+						<label style="margin: 11%;">Echostrike FX</label>
+						<label style="margin: 10%;">Luminex Jaune</label>
+						<label style="margin: 6.4%;">Morph Master Tiger</label>
+					</div>
+
+					<div class="gridTop2">
+						<a href="Flame Wind.html"><img src="Images/Yoyo/Basic/4.jpg"></a>
+						<a href="Battle Spin Yoyo Wave.html"><img src="Images/Yoyo/Basic/5.1.jpg"></a>
+						<a href="Morph Master Dark Dragon.html"><img src="Images/Yoyo/Basic/6.jpeg"></a>
+					</div>
+
+					<div class="bottom2">
+						<label style="margin: 12%;">Flame Wind</label>
+						<label style="margin: 7%;">Battle Spin Yoyo Wave</label>
+						<label style="margin: 3.1%;">Morph Master Dark Dragon</label>
+					</div>
+
+					<div class="gridTop3">
+						<a href="Chiyan War.html"><img src="Images/Yoyo/Basic/bz4.jpg"></a>
+						<a href="Nuclear Fussion.html"><img src="Images/Yoyo/Basic/bz8.jpg"></a>
+					</div>
+
+					<div class="bottom3">
+						<label style="margin: 10%;">Chiyan War Tiger</label>
+						<label style="margin: 8%;">Nuclear Fussion</label>
+					</div>
+				</div>
+
+				<div class="listView">
+					<div class="listYoyo1">
+						<img class="grid-4" src="Images/Yoyo/Basic/1.1.jpg">
+						<p class="grid-8">
+							<a href="Echostrike FX.html"><h2>Echostrike FX</h2></a>
+							<br> 
+							Features a retractable string for easy play. Spirit ring secures on finger for fast and controlled play action. Comes with 2 additional creature plates featuring different lights and sounds from base toy. Includes 1 toy and 2 creature plates.
+							<br> 
+							<br> 
+							<br> 
+						</p>
+
+						<input class="quantity" type="number" placeholder="Min. 1" min="1" max="100" id="qty" required="required"/>
+						<a class="cart" href="#" onclick="buyBas()"><img src="Images/cart.png"></a>
+					</div>
+
+					<div class="listYoyo2">
+						<img class="grid-4" src="Images/Yoyo/Basic/2.1.jpg">
+						<p class="grid-8">
+							<a href="Luminex Jaune.html"><h2>Luminex Jaune</h2></a>
+							<br>
+							This bright yoyo is perfect for having fun doing stunts that will impress many in the playground! 
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+						</p>
+
+						<input class="quantity" type="number" placeholder="Min. 1" min="1" max="100" id = "qty2" required="required"/>
+						<a class="cart" href="#" onclick="buyBas()"><img src="Images/cart.png"></a>
+					</div>
+
+					<div class="listYoyo3">
+						<img class="grid-4" src="Images/Yoyo/Basic/3.jpeg">
+						<p class="grid-8">
+							<a href="Morph Master Tiger.html"><h2>Morph Master Tiger</h2></a>
+							<br> 
+							2-in-1 toy features 2 distinct modes of play: basic (drum mode) and advanced (butterfly mode). Features long spinning string for more advanced played Ages 8 and up.
+							<br> 
+							<br> 
+							<br> 
+							<br> 
+						</p>
+				
+						<input class="quantity" type="number" placeholder="Min. 1" min="1" max="100" id="qty3" required="required"/>
+						<a class="cart" href="#" onclick="buyBas()"><img src="Images/cart.png"></a>
+					</div>
+
+					<div class="listYoyo4">
+						<img class="grid-4" src="Images/Yoyo/Basic/4.jpg">
+						<p class="grid-8">
+							<a href="Flame Wind.html"><h2>Flame Wind</h2></a>
+							<br>
+							Auldey Yoyo Flame Wind Professional Yoyo Toys for Kids Semi-automatic Rotation 5000 rpm Suitable for Little Power Kids.
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+						</p>
+
+						<input class="quantity" type="number" placeholder="Min. 1" min="1" max="100" id="qty4" required="required"/>
+						<a class="cart" href="#" onclick="buyBas()"><img src="Images/cart.png"></a>
+					</div>
+
+					<div class="listYoyo5">
+						<img class="grid-4" src="Images/Yoyo/Basic/5.1.jpg">
+						<p class="grid-8">
+							<a href="Battle Spin Yoyo Wave.html"><h2>Battle Spin Yoyo Wave</h2></a>
+							<br>
+							Features a retractable string for easy play. Spirit ring secures on finger for fast and controlled play action. Includes 1 toy.
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+						</p>
+
+						<input class="quantity" type="number" placeholder="Min. 1" min="1" max="100" id="qty5" required="required"/>
+						<a class="cart" href="#" onclick="buyBas()"><img src="Images/cart.png"></a>
+					</div>
+
+					<div class="listYoyo6">
+						<img class="grid-4" src="Images/Yoyo/Basic/6.jpeg">
+						<p class="grid-8">
+							<a href="Morph Master Dark Dragon.html"><h2>Morph Master Dark Dragon</h2></a>
+							<br>
+							2-in-1 toy features 2 distinct modes of play: basic (drum mode) and advanced (butterfly mode). Features long spinning string for more advanced played. Includes 1 toy. 
+							<br>
+							<br>
+							<br>
+							<br>
+						</p>
+
+						<input class="quantity" type="number" placeholder="Min. 1" min="1" max="100" id="qty6" required="required"/>
+						<a class="cart" href="#" onclick="buyBas()"><img src="Images/cart.png"></a>
+					</div>
+
+					<div class="listYoyo7">
+						<img class="grid-4" src="Images/Yoyo/Basic/bz4.jpg">
+						<p class="grid-8">
+							<a href="Chiyan War.html"><h2>Chiyan War Tiger</h2></a>
+							<br>
+							Ball Bearings O-ring recovery ABC PP and other engineering materials.	
+							<br>	
+							<br>	
+							<br>	
+							<br>	
+							<br>	
+							<br>	
+						</p>
+
+						<input class="quantity" type="number" placeholder="Min. 1" min="1" max="100" id="qty7" required="required"/>
+						<a class="cart" href="#" onclick="buyBas()"><img src="Images/cart.png"></a>
+					</div>
+
+					<div class="listYoyo8">
+						<img class="grid-4" src="Images/Yoyo/Basic/bz8.jpg">
+						<p class="grid-8">
+							<a href="Nuclear Fussion.html"><h2>Nuclear Fussion</h2></a>
+							<br>
+							Ball Bearings O-ring recovery ABC PP and other engineering materials. 
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+						</p>
+
+						<input class="quantity" type="number" placeholder="Min. 1" min="1" max="100" id="qty8" required="required"/>
+						<a class="cart" href="#" onclick="buyBas()"><img src="Images/cart.png"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	<div class="grid-12 footer">
+		<div class="grid-4 footerLeft">
+			<div class="logo">
+				<img src="Images/Logo/logo yoyo.png">
+			</div>
+
+			<div class="footContact">
+				<a class="grid-2" href="#"><img src="Images/Contact/facebook.png" width="40" height="40" onmouseover="document.getElementById('facebook').style.display = 'block';" onmouseout="document.getElementById('facebook').style.display = 'none';"></a></li>
+				<a class="grid-2" href="#"><img src="Images/Contact/twitter.png" width="40" height="40" onmouseover="document.getElementById('twitter').style.display = 'block';" onmouseout="document.getElementById('twitter').style.display = 'none';"></a></li>
+				<a class="grid-2" href="#"><img src="Images/Contact/tumblr.png" width="40" height="40" onmouseover="document.getElementById('tumblr').style.display = 'block';" onmouseout="document.getElementById('tumblr').style.display = 'none';"></a></li>
+				<label class="grid-3" id="facebook">Facebook</label>
+				<label class="grid-3" id="twitter">Twitter</label>
+				<label class="grid-3" id="tumblr">Tumblr</label>
+			</div>
+		</div>
+		
+		<div class="grid-4 footerCenter">
+			<h2>Address</h2>
+			<br>
+			<p>
+				ABC Tower, 1st Floor No. 1 
+			</p>
+		</div>
+		<div class="grid-4 footerRight">
+			<h2>Contact</h2>
+			<br>
+			<p>
+				Phone : (021)134567890
+				<br>
+				Email : JSyoyo@asd.com 
+			</p>
+		</div>
+	</div>
+	<script type="text/javascript" src="home.js"></script>
+	<!-- <audio autoplay="true" loop="true" src="Musics/Blazing Teens Op Chinese Version.mp3"> -->
+</body>
+</html>

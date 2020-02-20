@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tutorial JS Yo-Yo</title>
+	<link rel="stylesheet" type="text/css" href="OtherStyle.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<input type="checkbox" id="transView">
+	<input type="checkbox" id="button">
+	<label id="buttonClick" for="button">&#9776;</label>
+	
+	<div class="nav grid-12" id="navHeader">
+		<a href="Home.html"><img id="logo" class="grid-1" src="Images/Logo/logo yoyo.png"></a>
+
+		<ul id="menu" class="grid-11 menuList">
+			<li><a href="Home.html">Home</a></li>	
+			<li  class="menu2"><a href="#">Yo-yo Types</a>
+				<ul class="dropdown">
+					<li>
+						<a href="Basic.html">Basic</a>
+					</li>
+				
+					<li>
+						<a href="Professional.html">Professional</a>
+					</li>
+				</ul>
+			</li>	
+			<li><a href="Tutorial.html">Tutorials</a></li>
+			<li><a href="Contact.html">Contact</a></li>
+			<li><a href="Registration.html">Registration</a></li>
+		</ul>
+	</div>
+
+	<div class="grid-12 webContent">
+		<div class="centerTop">
+			<div class="grid-4 tutorialLeft">
+				<h2>BASIC TUTORIAL :</h2>
+				
+				<ul>
+					<li><a href="Loop.html">Loop The Loop</a></li>
+					<li><a href="ThrowDown.html">Throw Down</a></li>
+					<li><a href="ForwardPass.html">Forward Pass</a></li>
+					<li><a href="BreakAway.html">Break Away</a></li>
+					<li><a href="HopTheFence.html">Hop The Fence</a></li>
+					<li><a href="OverMount.html">Over Mount</a></li>
+				</ul>
+			</div>
+
+			<div class="grid-8 videoTutorial">
+				<iframe src="https://www.youtube.com/embed/kwkezwFPbqk?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</div>
+		</div>
+
+		<div class="centerBottom">
+			<div class="grid-4 tutorialLeft">
+				<h2>PROFESSIONAL TUTORIAL :</h2>
+					
+				<ul>
+					<li><a href="BrainTwister.html">Brain Twister</a></li>
+					<li><a href="DoubleGreenT.html">Double Green Triangle</a></li>
+					<li><a href="Folds.html">Folds</a></li>
+					<li><a href="MOFT.html">Man on the Flying Trapeze</a></li>
+					<li><a href="ReverseTrapeze.html">Reverse Trapeze</a></li>
+					<li><a href="SlackTrapeze.html">Slack Trapeze</a></li>
+				</ul>		
+			</div>
+
+			<div class="grid-8 videoTutorial">
+				<iframe src="https://www.youtube.com/embed/1pP243SShUI?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</div>
+		</div>
+
+	</div>
+		
+	<div class="grid-12 footer">
+		<div class="grid-4 footerLeft">
+			<div class="logo">
+				<img src="Images/Logo/logo yoyo.png">
+			</div>
+
+			<div class="footContact">
+				<a class="grid-2" href="#"><img src="Images/Contact/facebook.png" width="40" height="40" onmouseover="document.getElementById('facebook').style.display = 'block';" onmouseout="document.getElementById('facebook').style.display = 'none';"></a></li>
+				<a class="grid-2" href="#"><img src="Images/Contact/twitter.png" width="40" height="40" onmouseover="document.getElementById('twitter').style.display = 'block';" onmouseout="document.getElementById('twitter').style.display = 'none';"></a></li>
+				<a class="grid-2" href="#"><img src="Images/Contact/tumblr.png" width="40" height="40" onmouseover="document.getElementById('tumblr').style.display = 'block';" onmouseout="document.getElementById('tumblr').style.display = 'none';"></a></li>
+				<label class="grid-3" id="facebook">Facebook</label>
+				<label class="grid-3" id="twitter">Twitter</label>
+				<label class="grid-3" id="tumblr">Tumblr</label>
+			</div>
+		</div>
+		<div class="grid-4 footerCenter">
+			<h2>Address</h2>
+			<br>
+			<p>
+				ABC Tower, 1st Floor No. 1 
+			</p>
+		</div>
+		<div class="grid-4 footerRight">
+			<h2>Contact</h2>
+			<br>
+			<p>
+				Phone : (021)134567890
+				<br>
+				Email : JSyoyo@asd.com 
+			</p>
+		</div>
+	</div>
+	<script type="text/javascript" src="home.js"></script>
+
+	<!-- <audio autoplay="true" loop="true" src="Musics/Blazing Teens Op Chinese Version.mp3"> -->
+</body>
+</html>
